@@ -28,16 +28,12 @@ There are a number of connections you'll need to setup for everything to work. T
 
 1. Follow through the flow of the cards to get an idea of how the flow works.
 1. Select the connections for all the API cards. Note that even though there can multiple connection cards of the same type (such as API Endpoint), it doesn't mean it always uses the same connection as the other cards. Look at the URL, or function of the card to see what connection you'll need to use. Note that some API Endpoint cards will use the "No Auth" connection, such as some of the Jamf cards, because they take a dynamically generated bearer token.
-1. Follow the steps in the Paper guide (see next section) to setup some of the backend that's required such as the Slack app, Okta setup, and database setup.
+1. Follow the steps in the Paper guide to setup some of the backend that's required such as the Slack app, Okta setup, and database setup.
 1. The notes I included in the flows are also very useful to help setup the flows for your company, check them out
 
 ## How to add/remove tasks
 
 You can add your task as an Action flow and create any respective UTIl flows if necessary. Generally this is necessary if your flow will iterate through a list such as wiping multiple devices a user owned via jamf. Once your flow is created, you can add it in "2. Kick off deprovision". You can follow the format of the surrounding cards to get an idea on how to construct it. Be mindful of the order of operations and make sure your task makes sense where it is. If you're using Airtable, you'll want to edit the if/else card just before the deprovisioning starts. This card will instantiate the row for the target user, or read data from the row in the case of a retry. You'll have to create a new column in Airtable (I recommend in the same order as the flow will run), then reload the cards in both if and else by clicking on the gear icon on the lower right and hitting "choose fields". Select the new column and save. Be sure to define the outputs respectively and link to the action if/elif card.
-
-## More Info
-
-More detailed information can be found at my [Using Okta Workflows to Automate User Deprovisioning in Slack](https://paper.dropbox.com/doc/Using-Okta-Workflows-to-Automate-User-Deprovisioning-via-Slack-orNKxky5yAdc7f2dNu5Dr) Paper guide.
 
 ## Support
 
