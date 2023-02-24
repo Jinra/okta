@@ -29,6 +29,7 @@ There are a number of connections you'll need to setup for everything to work. T
 1. Follow through the flow of the cards to get an idea of how the flow works.
 1. Select the connections for all the API cards. Note that even though there can multiple connection cards of the same type (such as API Endpoint), it doesn't mean it always uses the same connection as the other cards. Look at the URL, or function of the card to see what connection you'll need to use. Note that some API Endpoint cards will use the "No Auth" connection, such as some of the Jamf cards, because they take a dynamically generated bearer token.
 1. Follow the steps in the Paper guide (see next section) to setup some of the backend that's required such as the Slack app, Okta setup, and database setup.
+1. The notes I included in the flows are also very useful to help setup the flows for your company, check them out
 
 ## How to add/remove tasks
 
@@ -40,4 +41,4 @@ More detailed information can be found at my [Using Okta Workflows to Automate U
 
 ## Support
 
-Feel free to ping me on the Mac Admins slack! @Pete Viri 
+I'm sure I missed a step or two, or more so feel free to ping me on the Mac Admins slack! @Pete Viri 
