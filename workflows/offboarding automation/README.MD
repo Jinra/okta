@@ -1,6 +1,6 @@
 ## Summary
 
-I am releasing the offboarding flow from [my Paper guide](https://paper.dropbox.com/doc/Using-Okta-Workflows-to-Automate-User-Deprovisioning-via-Slack-orNKxky5yAdc7f2dNu5Dr) for public use. Keep in mind this flow is very specific to the tools I used at that company and you may want only some, all, or more for you use case. The flow uses Slack as a platform to issue commands and post results, Airtable to store results of runs, and processes various actions for Google, Google Drive, Google Calendar, Okta, and Jamf. Adding more shouldn't be too difficult. I would take the time to fully understand the flow before you try to transition things to another service (such as Airtable to Google Sheets).
+I am releasing the offboarding flow from [my Paper guide](https://paper.dropbox.com/doc/Using-Okta-Workflows-to-Automate-User-Deprovisioning-via-Slack-orNKxky5yAdc7f2dNu5Dr) for public use. Keep in mind this flow is very specific to the tools I used at that company and you may want only some, all, or more for your use case. The flow uses Slack as a platform to issue commands and post results, Airtable to store results of runs, and processes various actions for Google, Google Drive, Google Calendar, Okta, and Jamf. Adding more shouldn't be too difficult. I would take the time to fully understand the flow before you try to transition things to another service (such as Airtable to Google Sheets).
 
 ## Flow Explanation
 
@@ -10,7 +10,7 @@ There is also a special action card called "Action - Process Result.." which dea
 
 ## Setup Connections
 
-There are a number of connections you'll need to setup for everything to work. They are
+There are a number of connections you'll need to setup for everything to work as is. They are
 
 1. API Connector - No Auth. This connection is basically a dummy connection for when you won't be passing authentication through the connection itself but rather as a bearer token through the header. You can use a "custom" connection type and leave the values blank
 1. API Connector - Slack. I use a lot of generic POST/GET cards for Slack API calls because I find them more consistent and flexible to use than the built in Slack connection.
