@@ -1,6 +1,6 @@
 ## Summary
 
-I am releasing the offboarding flow from https://paper.dropbox.com/doc/Using-Okta-Workflows-to-Automate-User-Deprovisioning-via-Slack-orNKxky5yAdc7f2dNu5Dr for public use. Keep in mind this flow is very specific to the tools I used at that company and you may want only some, all, or more for you use case. The flow uses Slack as a platform to issue commands and post results, Airtable to store results of runs, and processes various actions for Google, Google Drive, Google Calendar, Okta, and Jamf. Adding more shouldn't be too difficult. I would take the time to fully understand the flow before you try to transition things to another service (such as Airtable to Google Sheets).
+I am releasing the offboarding flow from [my Paper guide](https://paper.dropbox.com/doc/Using-Okta-Workflows-to-Automate-User-Deprovisioning-via-Slack-orNKxky5yAdc7f2dNu5Dr) for public use. Keep in mind this flow is very specific to the tools I used at that company and you may want only some, all, or more for you use case. The flow uses Slack as a platform to issue commands and post results, Airtable to store results of runs, and processes various actions for Google, Google Drive, Google Calendar, Okta, and Jamf. Adding more shouldn't be too difficult. I would take the time to fully understand the flow before you try to transition things to another service (such as Airtable to Google Sheets).
 
 ## Flow Explanation
 
